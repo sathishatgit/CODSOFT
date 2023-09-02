@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.SignUpLayout {
+  background-image: url("D:\WORK ENVIRONMENT\BusTicketBooking\client\src\Assets\Images\Book2.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.lognavi {
+  display: flex;
+  justify-content: center;
+  color: #090979;
+  border: 1px solid white;
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.579);
+  font-weight: 800;
+  font-size: larger;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.formHead {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: larger;
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.SignUpLayout h1 {
+  display: flex;
+  justify-content: center;
+}
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  font-family: cursive;
+  font-weight: 1000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 4rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.formHeading {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  font-family: cursive;
+  font-weight: 1000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 2rem;
+}
+.historyTag {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+.loginFormLayout {
+  background-image: url("D:\WORK ENVIRONMENT\BusTicketBooking\client\src\Assets\Images\book3.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: fit-content;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  border-radius: 20px;
+  margin: 100px 0 0 100px;
+}
+.loginButton Button {
+  width: max-content;
+}
+.loginButton {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .loginFormLayout {
+    width: 60%;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .SignUpLayout {
+    background-size: contain;
+  }
+
+  .loginFormLayout {
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+  }
+
+  .formHead {
+    width: 80px;
+    font-size: medium;
+  }
+
+  .animate-charcter {
+    font-size: 2rem;
+  }
+}
